@@ -69,7 +69,7 @@ jobs:
           git clone https://github.com/TheWildJames/AnyKernel3.git -b "$ANYKERNEL_BRANCH"
           git clone https://github.com/TheWildJames/kernel_patches.git
           git clone https://github.com/kerneltoast/android_kernel_google_gs201 --depth=1
-          SUSFS_BRANCH="gki-android14-6.1
+          SUSFS_BRANCH="gki-android14-6.1"
           git clone https://gitlab.com/simonpunk/susfs4ksu.git -b "$SUSFS_BRANCH"
           cd susfs4ksu
           git checkout ef16cbce5c5195988b9b630de85466148cbbcdef
