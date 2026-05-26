@@ -60,7 +60,7 @@ jobs:
         run: |
           echo "Cloning AnyKernel3 and other dependencies..."
 
-          ANYKERNEL_BRANCH="sultan-${{ inputs.codename }}"
+          ANYKERNEL_BRANCH="sultan-gs201"
 
           # Debug print the branches
           echo "Using branch for AnyKernel3: $ANYKERNEL_BRANCH"
