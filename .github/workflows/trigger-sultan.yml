@@ -1,0 +1,25 @@
+name: Trigger Sultan Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      codename:
+        description: 'Device codename (e.g., panther)'
+        required: true
+        default: 'panther'
+      android_version:
+        description: 'Android version (e.g., 16)'
+        required: true
+        default: '16'
+      kernel_version:
+        description: 'Kernel version (e.g., 6.1.145)'
+        required: true
+        default: '6.1.145'
+
+jobs:
+  call-sultan:
+    uses: Tyler6614/Sultan_KernelSU_SUSFS/.github/workflows/sultan.yml@main
+    with:
+      codename: ${{ github.event.inputs.codename }}
+      android_version: ${{ github.event.inputs.android_version }}
+      kernel_version: ${{ github.event.inputs.kernel_version }}
